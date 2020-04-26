@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*login and signup */
+
+
+
+#rooot{
+   overflow: hidden;
+    top:0;
+    left: 0;
+  
+    position: absolute;
+   height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tab{
+    cursor:pointer;
+    font-family: 'Poppins',sans-serif;
+    padding: 2px;
+    font-weight: 700;
+    font-size: x-large;
+}
+.active{
+   
+    color:blue;
+}
+
+.header{
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Poppins',sans-serif;
+    font-size:2.5em;
+    font-weight: 700;
+    color:#0000ff;
+}
+
+@media only screen and (max-height:400px){
+    .header{
+        display: none;
+    }
+}
+
+@media only screen and (min-height:400px){
+    .header{
+        display: flex;
+    }
+}
+.lcard{
+    
+   margin:20px;
+    font-family: 'Open Sans';
+    height: 30vh;
+    width:50vw;
+    min-width: 200px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner{
+    
+    display:flex;
+    min-width: 200px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.inp{
+    color:black;
+    font-family: 'Open sans',sans-serif;
+    font-size: 1.1em;
+    height: 40px;
+    padding:0px 12px;
+    background-color: #00000010;
+    border-radius: 7px;
+    border:0px;
+    
+}
+
+.button{
+    margin:0px 10px;
+    cursor: pointer;
+    background-color: blue;
+    height: 40px ;
+    min-width: 150px;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2em;
+}
+
+.button:hover{
+    transform: scale(0.95);
+}
+
+.button:disabled{
+    cursor:not-allowed;
+    background-color: #0000ff77;
+}
+
+.code{
+    font-size: 2em;
+    position: fixed;
+    top:0;
+    right: 0;
+    font-weight: 1000;
+    margin:20px;
+    cursor: pointer;
+    color:#00000030
+}
+
+.code:hover{
+    color: blue;
+}
+
+
+
+
+/* chat box */
+
+@media only screen and (max-width:720px){
+    .chatwin{
+        
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    .add{
+        width: 100%;
+    }
+
+  
+    
+
+   
+    #mess{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width:720px){
+    .chatwin{
+        width: 60vw;
+        height: 90vh;
+    }
+
+    .add{
+        width: 60vw;
+    }
+}
+
+.chatwin{
+    font-family: 'Open Sans',sans-serif;
+    
+  
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.top{
+   color: white;
+   font-family: 'Poppins' sans-serif;
+    width: 100%;
+    height: 8vh;
+    min-height: 50px;
+    background-color: blue;
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    flex-wrap: wrap;
+}
+
+.main{
+    overflow-y: scroll;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bubble{
+    
+    font-family: 'Open Sans',sans-serif;
+    padding: 10px;
+    margin:10px;
+    max-width: 70%;
+    background-color:#00000010 ;
+    border-radius: 10px;
+    
+}
+
+.sen{
+    color:white;
+    align-self: flex-end;
+    background-color: blue;
+}
+
+.add{
+    
+    flex-wrap: wrap;
+    font-family: 'Open Sans',sans-serif;
+   position:fixed;
+
+ 
+   align-self: stretch;
+   background-color: white;
+   padding:10px;
+   box-sizing: border-box;
+   justify-self: flex-start;
+    
+}
+
+.add em {
+   color:blue; 
+}
+
+.suggestions{
+    
+   
+   
+  
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: stretch;
+}
+
+.suggestions > div{
+
+color: blue;
+font-size: 1.1em;
+font-weight: 400;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.suggestions >div:hover{
+    font-weight: 1000;
+}
