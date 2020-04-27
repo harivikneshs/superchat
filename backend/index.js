@@ -18,12 +18,12 @@ mongodb server contains a database with name 'superchat' having 2 collections
 'messages' and 'users'
 */
 
-
+/*For deployment
 app.use(e.static(path.join(__dirname,'react_build')))
 
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'react_build','index.html'))
-})
+})*/
 
 
 
